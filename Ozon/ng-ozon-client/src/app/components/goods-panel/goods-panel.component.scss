@@ -1,0 +1,14 @@
+@import "./../../../styles/variables";
+
+
+.goods-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.order-card {
+    background: $main-color;
+    max-width: 400px;
+    margin: 20px;
+}

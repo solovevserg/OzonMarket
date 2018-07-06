@@ -1,0 +1,41 @@
+<div *ngIf="order">
+
+  <div>
+    <b>
+      Client:
+    </b>
+    <p>
+      Name:
+      <b>{{order.client.name}}</b>
+    </p>
+    <p>
+      Email:
+      <b>{{order.client.email}}</b>
+    </p>
+    <p>
+      Phone:
+      <b>{{order.client.phone}}</b>
+    </p>
+  </div>
+
+  <div>
+    State:
+    <i>
+      {{order.state}}
+    </i>
+  </div>
+
+  <div>
+    Orders
+    <ol>
+      <li *ngFor="let good of order.goods">
+        <ozon-good [good]="good"></ozon-good>
+      </li>
+    </ol>
+  </div>
+  {{order.time}}
+</div>
+
+<div *ngIf="!order">
+  Order error
+</div>

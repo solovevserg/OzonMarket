@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>
+  Welcome to {{ title }}!
+</h1>
+
+<h2>All orders</h2>
+<ozon-goods-panel [orders]="orders"></ozon-goods-panel>
+
+<h2>Orders recieved by clients</h2>
+<ozon-goods-panel [orders]="recievedOrders"></ozon-goods-panel>
+
+<router-outlet></router-outlet>
